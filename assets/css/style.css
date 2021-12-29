@@ -1,6 +1,73 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(15px);
+  transform: translateY(15px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+/* Icon Grow */
+.hvr-icon-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-grow .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-grow:hover .hvr-icon, .hvr-icon-grow:focus .hvr-icon, .hvr-icon-grow:active .hvr-icon {
+  -webkit-transform: scale(1.6) translateZ(0);
+  transform: scale(1.6) translateZ(0);
+}
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -11,7 +78,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/5.jpg") top left no-repeat;
+  background: #040404 url("../img/bg\ \(3\).jpg") top left no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -26,12 +93,12 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #037CB5;
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: #037CB5;
   text-decoration: none;
 }
 
@@ -73,8 +140,8 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 #header h2 span {
-  color: #fff;
-  border-bottom: 2px solid #18d26e;
+  color: #037CB5;
+  border-bottom: 2px solid #037CB5;
   padding-bottom: 6px;
 }
 #header img {
@@ -99,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 #header .social-links a:hover {
-  background: #18d26e;
+  background: #037CB5;
 }
 @media (max-width: 992px) {
   #header h1 {
@@ -198,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #037CB5;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -323,7 +390,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #037CB5;
   margin: 4px 10px;
 }
 .section-title p {
@@ -342,7 +409,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #037CB5;
 }
 .about-me .content ul {
   list-style: none;
@@ -359,7 +426,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #18d26e;
+  color: #037CB5;
   line-height: 0;
 }
 .about-me .content p:last-child {
@@ -387,7 +454,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: #037CB5;
   border-radius: 50px;
   line-height: 0;
 }
@@ -433,7 +500,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #18d26e;
+  background-color: #037CB5;
 }
 
 /*--------------------------------------------------------------
@@ -459,7 +526,7 @@ section .container {
   font-size: 16px;
   color: #fff;
 }
-.interests .icon-box:hover {
+.interests  {
   background: rgba(255, 255, 255, 0.12);
 }
 
@@ -528,7 +595,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #037CB5;
 }
 
 /*--------------------------------------------------------------
@@ -553,7 +620,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: #037CB5;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -581,8 +648,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: #037CB5;
+  border: 2px solid #037CB5;
 }
 
 /*--------------------------------------------------------------
@@ -598,7 +665,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: #037CB5;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -637,17 +704,17 @@ section .container {
   margin-bottom: 0;
 }
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: #037CB5;
+  border-color: #037CB5;
 }
 .services .icon-box:hover .icon {
   background: #fff;
 }
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: #037CB5;
 }
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #037CB5;
 }
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
@@ -682,7 +749,7 @@ section .container {
   border-radius: 4px;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #037CB5;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -850,7 +917,7 @@ section .container {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #037CB5;
 }
 
 /*--------------------------------------------------------------
@@ -864,7 +931,7 @@ section .container {
 }
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: #037CB5;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -896,7 +963,7 @@ section .container {
   transition: 0.3s;
 }
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: #037CB5;
 }
 .contact .php-email-form {
   padding: 30px;
@@ -916,7 +983,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  background: #037CB5;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -934,7 +1001,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #037CB5;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -966,7 +1033,7 @@ section .container {
   padding: 12px 15px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #18d26e;
+  background: #037CB5;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1015,7 +1082,7 @@ section .container {
   }
 }
 .credits a {
-  color: #18d26e;
+  color: #037CB5;
   transition: 0.3s;
 }
 .credits a:hover {
