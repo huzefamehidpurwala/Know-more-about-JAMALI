@@ -78,7 +78,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg\ \(3\).jpg") top left no-repeat;
+  background: #040404 url("../img/desktop.jpg") top left no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -89,6 +89,12 @@ body::before {
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background: #040404 url("../img/2.jpg");
   }
 }
 
@@ -526,7 +532,7 @@ section .container {
   font-size: 16px;
   color: #fff;
 }
-.interests  {
+.interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
 
