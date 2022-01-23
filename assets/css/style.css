@@ -929,6 +929,26 @@ section .container {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.byedit {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(to right, #037CB5, #037CB5 50%, #fff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+.byedit:hover {
+  background-position: 0 100%;
+}
+
 .contact .info-box {
   color: #444444;
   padding: 20px;
