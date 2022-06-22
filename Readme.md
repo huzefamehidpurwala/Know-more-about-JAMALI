@@ -3,7 +3,7 @@
 </div>  
   
 
-### <div align="center">Hello Folks!👋
+<div align="center">Hello Folks!👋
 I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀</div>  
   
 
