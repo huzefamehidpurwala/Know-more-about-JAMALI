@@ -2,15 +2,8 @@
 <img src="https://huzefa.mehidpurwala.xyz/assets/img/1.png" align="center" style="width: 100%" alt="https://huzefa.mehidpurwala.xyz/assets/img/1.png"/>
 </div>  
 
-<br/>
-
-<div align="center">
-<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" alt=""/>
-</div>
-  
-
-### <div align="center">Hello Folks!👋 </div>
-### <div align="center">I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀 by starting working as a supporter with a Network Engineer.</div>  
+# <div align="center">Hello Folks!👋 </div>
+## <div align="center">I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀 by starting working as a supporter with a Network Engineer.</div>  
   
 
 - 🔭 I’m currently getting ready for a Cybersecurity or Networking Job  
