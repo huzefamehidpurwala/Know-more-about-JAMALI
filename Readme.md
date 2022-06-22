@@ -3,8 +3,13 @@
 </div>  
   
 
+<<<<<<< HEAD
 ### <div align="center">Hello Folks!👋 </div>
 ### <div align="center">I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀</div>  
+=======
+<div align="center">Hello Folks!👋
+I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀</div>  
+>>>>>>> 80fbb32bbd7021dc0eb7b519baa604367820cbe1
   
 
 - 🔭 I’m currently getting ready for a Cybersecurity or Networking Job  
