@@ -1,6 +1,12 @@
 <div align="center">
 <img src="https://huzefa.mehidpurwala.xyz/assets/img/1.png" align="center" style="width: 100%" alt="https://huzefa.mehidpurwala.xyz/assets/img/1.png"/>
 </div>  
+
+<br/>
+
+<div align="center">
+<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" alt=""/>
+</div>
   
 
 ### <div align="center">Hello Folks!👋 </div>
