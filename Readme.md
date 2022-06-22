@@ -3,7 +3,7 @@
 </div>  
 
 # <div align="center">Hello Folks!👋 </div>
-## <div align="center">I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀 by starting working as a supporter with a Network Engineer.</div>  
+### <div align="center">I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀 by working as a supporter with a Network Engineer in Indore.</div>  
   
 
 - 🔭 I’m currently getting ready for a Cybersecurity or Networking Job  
@@ -119,10 +119,10 @@
                     align="center"
                 />
             </a>
-            <a href="https://www.buymeacoffee.com/#" target="_blank" style="display: inline-block;">
+            <!--<a href="https://www.buymeacoffee.com/#" target="_blank" style="display: inline-block;">
                 <img
                     src="https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg?style=flat-square" 
                     align="center"
                 />
-            </a></div>
+            </a>--></div>
 <br />
