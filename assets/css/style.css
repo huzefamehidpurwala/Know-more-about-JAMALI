@@ -1101,7 +1101,7 @@ section .container {
   color: #fff;
   z-index: 999999;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .credits {
     text-align: center;
     padding: 10px;
@@ -1114,4 +1114,13 @@ section .container {
 }
 .credits a:hover {
   color: #fff;
+}
+
+.credits footer {
+  font-family: Arial;
+}
+
+.credits footer span a {
+  font-family: Audiowide;
+  font-size: 15px;
 }
