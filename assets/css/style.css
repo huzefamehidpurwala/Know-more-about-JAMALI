@@ -65,8 +65,8 @@
   transition-timing-function: ease-out;
 }
 .hvr-icon-grow:hover .hvr-icon, .hvr-icon-grow:focus .hvr-icon, .hvr-icon-grow:active .hvr-icon {
-  -webkit-transform: scale(1.6) translateZ(0);
-  transform: scale(1.6) translateZ(0);
+  -webkit-transform: scale(1.5) translateZ(0);
+  transform: scale(1.5) translateZ(0);
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -1097,9 +1097,10 @@ section .container {
   bottom: 0;
   padding: 15px;
   text-align: right;
-  font-size: 13px;
+  font-size: 75%;
   color: #fff;
   z-index: 999999;
+  
 }
 @media (max-width: 768px) {
   .credits {
@@ -1122,5 +1123,5 @@ section .container {
 
 .credits footer span a {
   font-family: Audiowide;
-  font-size: 15px;
+  font-size: 115%;
 }
