@@ -2,13 +2,13 @@
 <img src="https://huzefa.mehidpurwala.xyz/assets/img/1.png" align="center" style="width: 100%" alt="https://huzefa.mehidpurwala.xyz/assets/img/1.png"/>
 </div>  
 
-<<<<<<< HEAD
+
 ### <div align="center">Hello Folks!👋 </div>
 ### <div align="center">I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀</div>  
-=======
+
 # <div align="center">Hello Folks!👋 </div>
 ### <div align="center">I'm Huzefa, a student at [Medi-Caps University](https://https://www.medicaps.ac.in/)👨‍💻 stepped into IT world in 2016 🚀 by working as a supporter with a Network Engineer in Indore.</div>  
->>>>>>> d39a9ef20aefcaa2848b10f1757c5ed669f09701
+
   
 
 - 🔭 I’m currently getting ready for a Cybersecurity or Networking Job  
