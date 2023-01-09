@@ -1,6 +1,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+  cursor: url('../img/12243-arrowcur.png'), auto;
+}
+a:hover {
+  cursor: url('../img/12243-handcur.png'), auto;
+}
 /* Float Shadow */
 .hvr-float-shadow {
   display: inline-block;
@@ -291,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   color: #fff;
   font-size: 35px;
-  cursor: pointer;
+  /* cursor: pointer; */
   display: none;
   line-height: 0;
   transition: 0.5s;
@@ -637,7 +643,7 @@ section .container {
   padding: 13px 20px 13px;
   outline: 0;
   border: 1px solid #aaaaaa;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   background-color: rgba(0, 0, 0, 0);
   user-select: none;
@@ -801,7 +807,7 @@ section .container {
   padding: 2px 15px;
 }
 .portfolio #portfolio-flters li {
-  cursor: pointer;
+  /* cursor: pointer; */
   display: inline-block;
   padding: 8px 16px 10px 16px;
   font-size: 14px;
