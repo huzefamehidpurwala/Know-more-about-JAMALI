@@ -1,12 +1,6 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-* {
-  cursor: url('../img/12243-arrowcur.png'), auto;
-}
-a:hover {
-  cursor: url('../img/12243-handcur.png'), auto;
-}
 /* Float Shadow */
 .hvr-float-shadow {
   display: inline-block;
