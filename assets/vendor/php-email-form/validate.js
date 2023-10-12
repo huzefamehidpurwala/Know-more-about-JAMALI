@@ -65,6 +65,7 @@
 
     const emailCheckerAPI = `https://api.zerobounce.net/v2/validate?api_key=f5fc47d5e9e54dd59d3cce6ceed8d010&email=${userEmail}&ip_address=`;
 
+    console.log('We are getting into somewhere');
     fetch(emailCheckerAPI)
       .then((response) => {
         console.log("email checker", response);
