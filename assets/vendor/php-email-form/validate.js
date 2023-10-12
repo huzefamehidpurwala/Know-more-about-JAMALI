@@ -68,7 +68,7 @@
     console.log('We are getting into somewhere');
     fetch(emailCheckerAPI)
       .then((response) => {
-        console.log("email checker", response);
+        // console.log("email checker", response);
         if (response.ok) {
           return response.text();
         } else {
@@ -79,7 +79,7 @@
       })
       .then((data) => {
         const dataJSON = JSON.parse(data);
-        console.log("email data", dataJSON);
+        // console.log("email data", dataJSON);
         thisForm.querySelector(".loading").classList.remove("d-block");
         if (dataJSON.status === "valid") {
           fetch(url);
@@ -154,5 +154,6 @@
     thisForm.querySelector(".loading").classList.remove("d-block");
     thisForm.querySelector(".error-message").innerHTML = error;
     thisForm.querySelector(".error-message").classList.add("d-block");
+    thisForm.reset();
   }
 })();
