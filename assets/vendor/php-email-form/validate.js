@@ -67,7 +67,7 @@
 
     fetch(emailCheckerAPI)
       .then((response) => {
-        // console.log("email checker", response);
+        console.log("email checker", response);
         if (response.ok) {
           return response.text();
         } else {
@@ -78,7 +78,7 @@
       })
       .then((data) => {
         const dataJSON = JSON.parse(data);
-        // console.log("email data", dataJSON);
+        console.log("email data", dataJSON);
         thisForm.querySelector(".loading").classList.remove("d-block");
         if (dataJSON.status === "valid") {
           fetch(url);
