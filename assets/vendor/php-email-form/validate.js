@@ -51,7 +51,8 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    // console.log(thisForm.querySelector("#email").value, "keseho");
+    const userEmail = thisForm.querySelector("#email").value;
+    // console.log(userEmail, "keseho");
     // console.log(thisForm, "thisForm");
 
     let url = `${action}?`;
@@ -62,7 +63,44 @@
     });
     // console.log(url);
 
-    fetch(url);
+    const emailCheckerAPI = `https://api.zerobounce.net/v2/validate?api_key=f5fc47d5e9e54dd59d3cce6ceed8d010&email=${userEmail}&ip_address=`;
+
+    fetch(emailCheckerAPI)
+      .then((response) => {
+        // console.log("email checker", response);
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error(
+            `${response.status} ${response.statusText} ${response.url}`
+          );
+        }
+      })
+      .then((data) => {
+        const dataJSON = JSON.parse(data);
+        // console.log("email data", dataJSON);
+        thisForm.querySelector(".loading").classList.remove("d-block");
+        if (dataJSON.status === "valid") {
+          fetch(url);
+          thisForm.querySelector(
+            ".sent-message"
+          ).innerHTML = `Thank you so much! I'll keep an eye on my inbox for your response. 😊💫<br>I'll revert back on ${userEmail}`;
+          // thisForm.querySelector(".sent-message").insertAdjacentHTML("beforeend", " " + userEmail);
+          thisForm.querySelector(".loading").classList.remove("d-block");
+          thisForm.querySelector(".sent-message").classList.add("d-block");
+          thisForm.reset();
+        } else {
+          throw new Error(
+            `Form submission failed as ${userEmail} is not valid email address.<br>MailAddressError: ${dataJSON.sub_status}`
+          );
+        }
+      })
+      .catch((error) => {
+        console.log("error occured: ", error);
+        displayError(thisForm, error);
+      });
+
+    // fetch(url);
     /* .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -79,11 +117,11 @@
         console.error("There was a problem with the fetch operation:", error);
       }); */
 
-    thisForm.querySelector(".sent-message").innerHTML = `Thank you so much! I'll keep an eye on my inbox for your response. 😊💫<br>I'll definitely revert back on ${thisForm.querySelector("#email").value}`;
-    // thisForm.querySelector(".sent-message").insertAdjacentHTML("beforeend", " " + thisForm.querySelector("#email").value);
+    /* thisForm.querySelector(".sent-message").innerHTML = `Thank you so much! I'll keep an eye on my inbox for your response. 😊💫<br>I'll revert back on ${userEmail}`;
+    // thisForm.querySelector(".sent-message").insertAdjacentHTML("beforeend", " " + userEmail);
     thisForm.querySelector(".loading").classList.remove("d-block");
     thisForm.querySelector(".sent-message").classList.add("d-block");
-    thisForm.reset();
+    thisForm.reset(); */
 
     /* fetch(action, {
       method: 'POST',
