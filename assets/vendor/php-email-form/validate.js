@@ -51,7 +51,8 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    // console.log(formData);
+    // console.log(thisForm.querySelector("#email").value, "keseho");
+    // console.log(thisForm, "thisForm");
 
     let url = `${action}?`;
     formData.forEach((value, key) => {
@@ -78,6 +79,8 @@
         console.error("There was a problem with the fetch operation:", error);
       }); */
 
+    thisForm.querySelector(".sent-message").innerHTML = `Thank you so much! I'll keep an eye on my inbox for your response. 😊💫<br>I'll definitely revert back on ${thisForm.querySelector("#email").value}`;
+    // thisForm.querySelector(".sent-message").insertAdjacentHTML("beforeend", " " + thisForm.querySelector("#email").value);
     thisForm.querySelector(".loading").classList.remove("d-block");
     thisForm.querySelector(".sent-message").classList.add("d-block");
     thisForm.reset();
