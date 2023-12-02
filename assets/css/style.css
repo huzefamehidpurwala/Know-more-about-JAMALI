@@ -537,7 +537,7 @@ section .container {
   margin-bottom: 0;
 }
 
-.about-me span {
+.about-me p > span {
   border-radius: 1em 0 1em 0;
   background-image: linear-gradient(
     -100deg,
@@ -545,6 +545,10 @@ section .container {
     rgb(3, 124, 181, 0.7) 95%,
     rgb(3, 124, 181, 0.2)
   );
+}
+
+.about-me #success-msg {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
