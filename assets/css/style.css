@@ -6,6 +6,12 @@
   background: #eee;
 }
 
+.social-links i,
+.social-links img {
+  height: 16px;
+  width: 16px;
+}
+
 /* Float Shadow */
 .hvr-float-shadow {
   display: inline-block;
@@ -227,7 +233,7 @@ h6 {
 
   #header h2 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 36px;
   }
 
   #header .social-links {
