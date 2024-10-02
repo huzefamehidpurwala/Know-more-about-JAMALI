@@ -57,8 +57,8 @@
 .hvr-float-shadow:hover,
 .hvr-float-shadow:focus,
 .hvr-float-shadow:active {
-  -webkit-transform: translateY(-15px);
-  transform: translateY(-15px);
+  -webkit-transform: translateY(-12px);
+  transform: translateY(-12px);
   /* move the element up by 5px */
 }
 
@@ -66,8 +66,8 @@
 .hvr-float-shadow:focus:before,
 .hvr-float-shadow:active:before {
   opacity: 1;
-  -webkit-transform: translateY(15px);
-  transform: translateY(15px);
+  -webkit-transform: translateY(12px);
+  transform: translateY(12px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
@@ -96,8 +96,8 @@
 .hvr-icon-grow:hover .hvr-icon,
 .hvr-icon-grow:focus .hvr-icon,
 .hvr-icon-grow:active .hvr-icon {
-  -webkit-transform: scale(1.5) translateZ(0);
-  transform: scale(1.5) translateZ(0);
+  -webkit-transform: scale(1.2) translateZ(0);
+  transform: scale(1.2) translateZ(0);
 }
 
 body {
@@ -656,7 +656,7 @@ section .container {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 1.25;
   font-size: 16px;
   color: #fff;
 }
