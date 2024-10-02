@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-* ::selection {
+*::selection {
   color: #037cb5;
   background: #eee;
 }
@@ -552,6 +552,18 @@ section .container {
     rgb(3, 124, 181, 0.2)
   );
 }
+
+/* .about-me p > span::selection {
+  color: #eee !important;
+  background: #037cb5 !important;
+  border-radius: 1em 0 1em 0 !important;
+  background-image: linear-gradient(
+    -100deg,
+    rgb(3, 124, 181, 0.4),
+    rgb(3, 124, 181, 0.7) 95%,
+    rgb(3, 124, 181, 0.2)
+  ) !important;
+} */
 
 .about-me #success-msg {
   text-align: center;
