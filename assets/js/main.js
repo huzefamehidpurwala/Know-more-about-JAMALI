@@ -258,7 +258,7 @@
   /**
    * add Position text dynamically
    */
-  const myPosition = "SPFx and MS-Teams App Developer";
+  const myPosition = "SPFx and MS-Teams App Engineer";
   const myPositionTags = select("#myPositionTags", true);
   if (myPositionTags.length > 0) {
     myPositionTags.forEach((tag) => {
