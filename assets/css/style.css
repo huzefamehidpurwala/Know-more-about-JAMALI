@@ -1,6 +1,22 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --Backgrnd: #040404;
+  --Default: #fafafa;
+  --Heading: #ffffff;
+  --Accent: #037cb5;
+  --Surface: #1a1a1a;
+  --Contrast: #040404;
+
+  --Nav: #fafafa;
+  --NavHov: #037cb5;
+  --MobBG: #1a1a1a;
+  --DropBG: #1a1a1a;
+  --DropNav: #fafafa;
+  --DropHov: #037cb5;
+}
+
 *::selection {
   color: #037cb5;
   background: #eee;
