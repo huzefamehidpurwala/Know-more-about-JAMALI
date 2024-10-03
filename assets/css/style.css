@@ -1194,7 +1194,7 @@ section .container {
 .byedit {
   position: relative;
   display: inline-block;
-  font-size: 2em;
+  /* font-size: 2em; */
   font-weight: 800;
   color: #fff;
   overflow: hidden;
